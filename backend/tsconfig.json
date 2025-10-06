@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    /* === File Layout === */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* === Environment Settings === */
+    "module": "commonjs", // usar commonjs (más estándar en Node)
+    "target": "ES2020", // compatibilidad moderna
+    "lib": ["ES2020"], // librerías base
+    "types": ["node"], // usar tipos de Node.js
+
+    /* === Output Options === */
+    "sourceMap": true, // útil para debug
+    "declaration": true, // genera .d.ts (tipos exportados)
+    "declarationMap": true,
+
+    /* === Type Checking === */
+    "strict": true, // modo estricto
+    "noImplicitAny": true, // evitar variables sin tipo
+    "noUnusedLocals": true, // detectar variables sin uso
+    "noUnusedParameters": true, // detectar parámetros sin uso
+    "noFallthroughCasesInSwitch": true,
+
+    /* === Module Resolution === */
+    "esModuleInterop": true, // permite importar paquetes CommonJS como ESModules
+    "resolveJsonModule": true, // permite importar archivos .json
+    "skipLibCheck": true // más rápido compilando
+  },
+  "include": ["src"], // incluir carpeta src
+  "exclude": ["node_modules", "dist"] // ignorar estas carpetas
+}
